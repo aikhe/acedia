@@ -55,7 +55,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
 }
 
 body {
@@ -64,7 +63,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: ApercuMonoRegular;
   letter-spacing: -0.02em;
-  font-size: 1rem;
+  font-size: 12pt;
+}
+
+p {
+  opacity: 80%;
 }
 
 a {

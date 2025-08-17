@@ -15,7 +15,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
-  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -24,10 +23,9 @@ header {
 nav {
   display: flex;
   gap: 1rem;
-  font-size: 1.02rem;
+  font-size: 14pt;
   font-family: ApercuMonoMedium;
   font-optical-sizing: auto;
-  font-style: bold;
 }
 
 nav a.router-link-exact-active {
@@ -36,7 +34,6 @@ nav a.router-link-exact-active {
 }
 
 nav a {
-  background-color: transparent;
   color: black;
   opacity: 0.6;
 }
