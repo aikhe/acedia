@@ -1,16 +1,8 @@
-<script setup lang="ts">
-import { useCounterStore } from '../stores/counter'
-import { storeToRefs } from 'pinia'
-
-const counter = useCounterStore()
-
-const { count } = storeToRefs(counter)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="lumi">
     <h1>This is a page dedicated for my wife&lt;3</h1>
-    <p>{{ count }}</p>
   </div>
 </template>
 
