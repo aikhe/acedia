@@ -5,9 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">home</RouterLink>
-      <RouterLink to="/test">test</RouterLink>
-      <RouterLink to="/lumi">lumi</RouterLink>
+      <RouterLink to="/">HOME</RouterLink>
+      <RouterLink to="/test">TEST</RouterLink>
+      <RouterLink to="/lumi">LUMI</RouterLink>
     </nav>
   </header>
 
@@ -24,9 +24,8 @@ header {
 nav {
   display: flex;
   gap: 1rem;
-  font-size: 14pt;
-  font-family: ApercuMonoMedium;
-  font-optical-sizing: auto;
+  font-size: 12pt;
+  font-family: ApercuMonoLight;
 }
 
 nav a.router-link-exact-active {
