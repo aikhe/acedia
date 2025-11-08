@@ -30,7 +30,7 @@
 
 .now__link {
   padding: 0.34rem 0.8rem;
-  background-color: black;
+  background-color: #252525;
   color: white;
   display: flex;
   justify-content: center;

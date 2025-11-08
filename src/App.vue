@@ -34,15 +34,38 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
 
-  <footer class="container">
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="footer__brand sub-reg">
-      <RouterLink class="brand__container" to="/">ACEDIA</RouterLink>
-      <span class="brand__container">AIKHE @2025</span>
+  <footer>
+    <div class="footer container">
+      <div class="footer__info">
+        <div class="info__left">
+          <div class="info__container">
+            <strong class="info__title">Specialty</strong>
+            <span class="info__desc">
+              Building cool stuff<br />
+              Obsessing about my delusions
+            </span>
+          </div>
+
+          <div class="info__container">
+            <strong class="info__title">Social</strong>
+            <span class="info__desc">
+              <a href="">Github</a><br />
+              <a href="">Facebook</a><br />
+              <a href="">Linkedin</a><br />
+              <a href="">X</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="info__right info__container">
+          <strong class="info__title">Contact</strong>
+          <span class="info__desc"> ikeandrie.ro@gmai.com </span>
+        </div>
+      </div>
+      <div class="footer__brand sub-reg">
+        <RouterLink class="brand__container" to="/">ACEDIA</RouterLink>
+        <span class="brand__container">AIKHE @2025</span>
+      </div>
     </div>
   </footer>
 </template>
@@ -54,27 +77,6 @@ header {
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__brand {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand__container {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar {
@@ -119,5 +121,93 @@ nav a:hover {
   width: 1.2rem;
   height: 1.2em;
   fill: black;
+}
+
+footer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #252525;
+  padding: 2.5rem 0 3rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.footer__brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 0.75;
+}
+
+.footer__info {
+  margin-top: 1.8rem;
+  display: flex;
+}
+
+.info__container {
+  font-size: 12pt;
+  line-height: 1.4;
+  letter-spacing: -3.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.info__right {
+  width: 38%;
+}
+
+.info__left {
+  width: 62%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__left div {
+  width: 50%;
+}
+
+.info__title {
+  font-family: ApercuMonoRegular;
+}
+
+.info__desc {
+  font-family: ApercuMonoLight;
+  line-height: 1.34;
+  opacity: 0.45;
+}
+
+.info__desc a {
+  color: white;
+}
+
+.brand__container:first-child {
+  color: white;
+  width: 62%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__container:last-child {
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
