@@ -28,11 +28,22 @@ a {
   text-decoration: none;
 }
 
-.inspect {
-  border: red solid 1px;
+h1 {
+  all: unset;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
   all: unset;
   cursor: pointer;
+}
+
+.inspect {
+  border: red solid 1px;
 }
