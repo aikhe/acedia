@@ -7,11 +7,12 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="navbar container">
       <div class="acedia">
         <div class="acedia__box" />
-        <span class="sub-light">ACEDIA</span>
+        <span class="sub-reg">ACEDIA</span>
       </div>
 
-      <nav class="sub-light">
-        <RouterLink to="/">HOME</RouterLink>
+      <nav class="sub-reg">
+        <RouterLink to="/">ME</RouterLink>
+        <RouterLink to="/home">HOME</RouterLink>
         <RouterLink to="/test">TEST</RouterLink>
         <RouterLink to="/lumi">LUMI</RouterLink>
       </nav>
@@ -32,6 +33,18 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+
+  <footer class="container">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="footer__brand sub-reg">
+      <RouterLink class="brand__container" to="/">ACEDIA</RouterLink>
+      <span class="brand__container">AIKHE @2025</span>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -41,6 +54,27 @@ header {
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {

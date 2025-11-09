@@ -4,7 +4,7 @@
   <div class="section--status">
     <div class="container--status">
       <div />
-      <div class="status">
+      <div class="status font-plex-sans font-default">
         <ul class="status__message">
           <li>I’m Currently finding what this path leads to</li>
         </ul>
@@ -34,6 +34,7 @@
   flex-direction: column;
   align-items: flex-end;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 .status__message {

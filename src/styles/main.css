@@ -13,11 +13,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-optical-sizing: auto;
-  font-variation-settings: 'wdth' 100;
-  letter-spacing: -0.02em;
-  font-size: 12pt;
 }
 
 p {
@@ -29,6 +24,10 @@ a {
 }
 
 h1 {
+  all: unset;
+}
+
+strong {
   all: unset;
 }
 
