@@ -23,7 +23,7 @@
 
       <p class="margin--medium font-plex-sans font-desc">
         Even then, Im also ready to take and pursue my own direction when life leads me to a
-        different direction. Whether that means stepping away or exploring oppurtunities outside the
+        different direction. Whether that means stepping away or exploring opportunities outside the
         "traditional path". I have a deep knowing that my own path doesn't have to look like anyone
         else's and it may be a journey that include the most intense hardship or a peace that'll
         make my future self proud.
@@ -31,7 +31,7 @@
 
       <p class="margin--medium font-plex-sans font-desc">
         To close this, I want to list the possibilities I should be aware of, the resposibilities I
-        should have and the oppurtunities I can have by taking a non-traditional path could offer
+        should have and the opportunities I can have by taking a non-traditional path could offer
         me.
       </p>
 
@@ -42,7 +42,7 @@
         <li>“High Risk, High Reward” or “High Risk, Possible Failure”.</li>
         <li>Become a Failure if I don't take my life seriously.</li>
         <li>
-          Lower oppurtunities in every aspect of life (job, status, respect, relationship, etc.).
+          Lower opportunities in every aspect of life (job, status, respect, relationship, etc.).
         </li>
         <li>
           The intense need for strong self-discipline and personal accountability to achieve my
@@ -71,7 +71,7 @@
       </ul>
 
       <p class="margin--medium font-plex-sans font-desc">
-        <strong>The oppurtunities I can develop and lucky to have:</strong>
+        <strong>The opportunities I can develop and lucky to have:</strong>
       </p>
       <ul class="margin--medium font-plex-sans font-desc">
         <li>Freelance gigs & clients.</li>

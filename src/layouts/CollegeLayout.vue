@@ -14,7 +14,7 @@
 
       <p class="margin--medium font-plex-sans font-desc">
         Having passed and getting into this UNI, people in my life are happy and proud. This is the
-        oppurtunity that most can't just disregard, and so as I see the results I feel thankful. I
+        opportunity that most can't just disregard, and so as I see the results I feel thankful. I
         chose my dream course "Computer Science" as this has been on my main quest ever since I
         developed a love and passion for building using computer languages and my creativity.
         College start the fire inside me, igniting as it expects and long for such experience that I

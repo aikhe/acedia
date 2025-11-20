@@ -2,6 +2,7 @@
 
 - [x] Favicon
 - [x] Mobile responsive (media queries)
+- [ ] Meta
 - [ ] Images
   - [ ] Lazy
   - [ ] Skeleton
