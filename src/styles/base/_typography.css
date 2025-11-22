@@ -45,3 +45,24 @@
   font-size: 10.5pt;
   font-weight: 350;
 }
+
+.blog-title {
+  font-size: 52pt;
+  font-family: ApercuMonoRegular;
+  letter-spacing: -4%;
+  line-height: 0.75;
+}
+
+.blog-title {
+  font-size: 52pt;
+  font-family: ApercuMonoRegular;
+  letter-spacing: -4%;
+  line-height: 0.75;
+}
+
+.blog-content-title {
+  font-size: 40pt;
+  font-family: ApercuMonoRegular;
+  letter-spacing: -4%;
+  line-height: 0.75;
+}

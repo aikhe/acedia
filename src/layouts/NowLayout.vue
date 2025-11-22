@@ -3,23 +3,19 @@
 <template>
   <section class="">
     <div class="blog-container hero">
-      <div class="hero__title font-title">
+      <div class="hero__title blog-title">
         <h1>Now</h1>
       </div>
 
       <p class="hero__desc font-plex-sans font-desc">
         My current decisions, my life, my experiences and<br />
-        everything to come may it be my plans or unexpected outcomes
+        everything to come may it be my plans or the unexpected outcomes.
       </p>
 
       <div class="hero__banner">
         <img class="banner__img" src="/now.png" alt="Banner" />
       </div>
     </div>
-  </section>
-
-  <section>
-    <p>start here</p>
   </section>
 </template>
 
@@ -42,7 +38,7 @@
 }
 
 .hero__banner {
-  margin-top: 1.5rem;
+  margin-top: 2.4rem;
 }
 
 .banner__img {
