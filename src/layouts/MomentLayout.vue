@@ -6,23 +6,27 @@
       <h1 class="blog-content-title">At this Moment</h1>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Im writing this base of all the things that have happened and the current situation im in.
-        Ever since college started, I've been experiencing a lot of things that someone should have
-        later on find later in life, may it being stressed and worrying about the future, my current
-        financial status, my social life, and my education.
+        Im writing this base of all the things that have happened and the
+        <strong>current situation im in</strong>. Ever since college started, I've been experiencing
+        a lot of things that someone should have later on find later in life, may it being
+        <strong>stressed and worrying about the future</strong>, my
+        <strong>current financial status</strong>, my <strong>social life</strong>, and my
+        <strong>education</strong>.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        There's a lot I've discovered just because of that nagging feeling to know what I really
-        want in life. This state of curiosity has led to my present decisions, decisions that can be
-        the end of everything, decisions that could lead me where I really want to be or the
-        decision that will secure my future.
+        There's a lot I've discovered just because of that
+        <strong>nagging feeling to know what I really want in life</strong>. This state of curiosity
+        has led to my present decisions, decisions that can be
+        <strong>the end of everything</strong>, decisions that could lead me
+        <strong>where I really want to be</strong> or the decision that will
+        <strong>secure my future</strong>.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
         Before I take on explaining what have happened throughout all of this, first is I wanna list
-        down all the things that I'm willing to share since all things considered, some part of life
-        should just be private.
+        down all the things that I'm willing to share since all things considered,
+        <strong>some part of life should just be private</strong>.
       </p>
 
       <ul class="margin--medium font-plex-sans font-desc">
@@ -37,6 +41,10 @@
 </template>
 
 <style scoped>
+strong {
+  font-weight: 450;
+}
+
 .margin--medium {
   margin-top: 2rem;
 }

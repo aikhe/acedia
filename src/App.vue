@@ -40,7 +40,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <strong class="info__title">Specialty</strong>
             <span class="info__desc">
               Building cool stuff<br />
-              Obsessing about my delusions
+              Learning about myself
             </span>
           </div>
 
@@ -85,7 +85,7 @@ header {
 
 nav {
   display: flex;
-  gap: 16rem;
+  gap: 4rem;
 }
 
 nav a.router-link-exact-active {

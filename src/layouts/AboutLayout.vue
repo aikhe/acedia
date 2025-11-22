@@ -27,8 +27,8 @@
         <div class="info">
           <strong class="info__title">Favourite</strong>
           <span class="info__desc">
-            my lil cupcake<br />
-            maomi&lt;3
+            Philosophy novels<br />
+            I really like coding
           </span>
         </div>
 

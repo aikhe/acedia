@@ -15,7 +15,7 @@ import SuccessLayout from '@/layouts/SuccessLayout.vue'
     <CollegeLayout />
     <div class="spacing-content" />
     <SuccessLayout />
-    <div class="spacing" />
+    <div class="spacing--medium" />
   </main>
 </template>
 
@@ -23,6 +23,11 @@ import SuccessLayout from '@/layouts/SuccessLayout.vue'
 .spacing {
   width: 100%;
   height: 12rem;
+}
+
+.spacing--medium {
+  width: 100%;
+  height: 16rem;
 }
 
 .spacing-content {
