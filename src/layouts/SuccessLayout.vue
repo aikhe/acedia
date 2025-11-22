@@ -31,9 +31,10 @@
 
       <p class="margin--medium font-plex-sans font-desc">
         What's really <strong>ironic</strong> is that this system is made primarily focused to
-        students and teachers looking for software to make their studying easier and the one who
-        made it was the one who <strong>literally failed all of his subjects</strong> because of
-        certain circumstances in his life.
+        students and teachers looking for software to make their studying easier such as myself but
+        the one who made it was the one who
+        <strong>literally failed all of his subjects</strong> because of certain circumstances in
+        his life.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
@@ -72,19 +73,5 @@ strong {
 
 .margin--medium {
   margin-top: 2rem;
-}
-
-.spacing--medium {
-  width: 100%;
-}
-
-.spacing--large {
-  width: 100%;
-  height: 10rem;
-}
-
-.spacing--medium {
-  width: 100%;
-  height: 16rem;
 }
 </style>

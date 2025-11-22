@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router'
         brings clarity and sense to my nagging curiosity.
       </p>
       <div class="hero__banner">
-        <img class="banner__img" src="/banner.png" alt="Banner" />
+        <img loading="lazy" class="banner__img" src="/banner.png" alt="Banner" />
         <div class="banner__caption font-plex-sans sub-reg">
           <span class="caption__more">+ MORE INFO</span>
           <RouterLink to="/home" class="caption__now">
@@ -97,7 +97,7 @@ import { RouterLink } from 'vue-router'
   .hero__title h1 {
     font-size: 2.5rem; /* Adjust as needed based on font-title definition */
   }
-  
+
   .caption__now {
     display: none;
   }

@@ -54,17 +54,22 @@ strong {
   margin-top: 2rem;
 }
 
-.spacing--medium {
-  width: 100%;
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-.spacing--large {
-  width: 100%;
-  height: 10rem;
+@media (max-width: 768px) {
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.spacing--medium {
-  width: 100%;
-  height: 16rem;
+.caption-group {
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+  font-size: 0.9rem;
 }
 </style>
