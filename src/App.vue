@@ -12,9 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav class="sub-reg">
         <RouterLink to="/">ME</RouterLink>
-        <RouterLink to="/home">HOME</RouterLink>
-        <RouterLink to="/test">TEST</RouterLink>
-        <RouterLink to="/lumi">LUMI</RouterLink>
+        <RouterLink to="/now">NOW</RouterLink>
       </nav>
 
       <button>

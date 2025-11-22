@@ -3,7 +3,7 @@
 <template>
   <section>
     <div class="now">
-      <RouterLink to="/home" class="now__link font-plex-sans sub-reg">
+      <RouterLink to="/now" class="now__link font-plex-sans sub-reg">
         <span class="now__text">NOW</span>
         &nbsp;
         <svg
