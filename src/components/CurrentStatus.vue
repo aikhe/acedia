@@ -24,9 +24,16 @@
 }
 
 .container--status {
-  width: 1380px;
+  max-width: 1380px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container--status {
+    width: 90%; /* Ensure it has space on sides */
+  }
 }
 
 .status {

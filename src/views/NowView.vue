@@ -34,4 +34,18 @@ import SuccessLayout from '@/layouts/SuccessLayout.vue'
   width: 100%;
   height: 6rem;
 }
+
+@media (max-width: 768px) {
+  .spacing {
+    height: 6rem;
+  }
+
+  .spacing--medium {
+    height: 8rem;
+  }
+
+  .spacing-content {
+    height: 3rem;
+  }
+}
 </style>

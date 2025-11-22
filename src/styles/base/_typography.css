@@ -66,3 +66,21 @@
   letter-spacing: -4%;
   line-height: 0.75;
 }
+
+@media (max-width: 768px) {
+  .font-title {
+    font-size: 28pt;
+  }
+
+  .font-desc {
+    font-size: 14pt;
+  }
+
+  .blog-title {
+    font-size: 36pt;
+  }
+
+  .blog-content-title {
+    font-size: 28pt;
+  }
+}

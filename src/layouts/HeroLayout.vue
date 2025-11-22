@@ -92,4 +92,14 @@ import { RouterLink } from 'vue-router'
 .left-arrow {
   height: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .hero__title h1 {
+    font-size: 2.5rem; /* Adjust as needed based on font-title definition */
+  }
+  
+  .caption__now {
+    display: none;
+  }
+}
 </style>

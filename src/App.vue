@@ -88,6 +88,12 @@ nav {
   gap: 4rem;
 }
 
+@media (max-width: 768px) {
+  nav {
+    gap: 2rem;
+  }
+}
+
 nav a.router-link-exact-active {
   color: black;
   opacity: 1;
@@ -138,6 +144,12 @@ footer {
   gap: 6rem;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    gap: 3rem;
+  }
+}
+
 .footer__brand {
   width: 100%;
   display: flex;
@@ -157,6 +169,13 @@ footer {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .footer__info {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
 .info__container {
   font-size: 12pt;
   line-height: 1.4;
@@ -174,6 +193,13 @@ footer {
   width: 62%;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .info__right,
+  .info__left {
+    width: 100%;
+  }
 }
 
 .info__left div {
@@ -207,5 +233,18 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .brand__container:first-child,
+  .brand__container:last-child {
+    width: 100%;
+  }
+  
+  .footer__brand {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: flex-start;
+  }
 }
 </style>

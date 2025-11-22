@@ -74,6 +74,13 @@
   gap: 5.5rem;
 }
 
+@media (max-width: 768px) {
+  .about__info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .info {
   font-size: 12.5pt;
   display: flex;

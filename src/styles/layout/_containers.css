@@ -1,7 +1,9 @@
 .container {
-  width: 1380px;
+  max-width: 1380px;
+  width: 90%;
 }
 
 .blog-container {
-  width: 1000px;
+  max-width: 1000px;
+  width: 90%;
 }

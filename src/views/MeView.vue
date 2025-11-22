@@ -32,4 +32,18 @@ import NowDirect from '@/components/NowDirect.vue'
   width: 100%;
   height: 16rem;
 }
+
+@media (max-width: 768px) {
+  .spacing--medium {
+    height: 4rem;
+  }
+
+  .spacing--large {
+    height: 6rem;
+  }
+
+  .spacing--huge {
+    height: 8rem;
+  }
+}
 </style>
