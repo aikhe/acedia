@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import NowLayout from '@/layouts/NowLayout.vue'
-import AboutLayout from '@/layouts/AboutLayout.vue'
-import NowDirect from '@/components/NowDirect.vue'
 </script>
 
 <template>
   <main>
-    <NowLayout />
     <div class="spacing--large" />
-    <AboutLayout />
+    <NowLayout />
     <div class="spacing--huge" />
-    <NowDirect />
   </main>
 </template>
 
