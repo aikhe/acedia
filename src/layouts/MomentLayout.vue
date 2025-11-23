@@ -49,17 +49,9 @@ strong {
   margin-top: 2rem;
 }
 
-.spacing--medium {
-  width: 100%;
-}
-
-.spacing--large {
-  width: 100%;
-  height: 10rem;
-}
-
-.spacing--medium {
-  width: 100%;
-  height: 16rem;
+@media (max-width: 768px) {
+  .margin--medium {
+    margin-top: 1.2rem;
+  }
 }
 </style>

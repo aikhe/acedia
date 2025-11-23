@@ -7,10 +7,10 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="navbar container">
       <div class="acedia">
         <div class="acedia__box" />
-        <span class="sub-reg">ACEDIA</span>
+        <span class="sub-reg acedia__text">ACEDIA</span>
       </div>
 
-      <nav class="sub-reg">
+      <nav class="sub-reg navbar__links">
         <RouterLink to="/">ME</RouterLink>
         <RouterLink to="/now">NOW</RouterLink>
       </nav>
@@ -57,7 +57,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <div class="info__right info__container">
           <strong class="info__title">Contact</strong>
-          <span class="info__desc"> ikeandrie.ro@gmai.com </span>
+          <span class="info__desc"> ikeandrie.ro@gmail.com </span>
         </div>
       </div>
       <div class="footer__brand sub-reg">
@@ -88,12 +88,6 @@ nav {
   gap: 4rem;
 }
 
-@media (max-width: 768px) {
-  nav {
-    gap: 2rem;
-  }
-}
-
 nav a.router-link-exact-active {
   color: black;
   opacity: 1;
@@ -110,9 +104,13 @@ nav a:hover {
 
 .acedia {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0.6rem;
+}
+
+.acedia__text {
+  margin-left: 1.2rem;
+  position: absolute;
 }
 
 .acedia__box {
@@ -144,12 +142,6 @@ footer {
   gap: 6rem;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    gap: 3rem;
-  }
-}
-
 .footer__brand {
   width: 100%;
   display: flex;
@@ -169,13 +161,6 @@ footer {
   display: flex;
 }
 
-@media (max-width: 768px) {
-  .footer__info {
-    flex-direction: column;
-    gap: 3rem;
-  }
-}
-
 .info__container {
   font-size: 12pt;
   line-height: 1.4;
@@ -193,13 +178,6 @@ footer {
   width: 62%;
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .info__right,
-  .info__left {
-    width: 100%;
-  }
 }
 
 .info__left div {
@@ -236,14 +214,41 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav {
+    gap: 2rem;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .acedia__box {
+    margin-top: -4px;
+  }
+
+  .footer {
+    gap: 3rem;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info__right,
+  .info__left {
+    width: 100%;
+  }
+
   .brand__container:first-child,
   .brand__container:last-child {
     width: 100%;
   }
-  
+
   .footer__brand {
-    flex-direction: column-reverse;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
     align-items: flex-start;
   }
 }

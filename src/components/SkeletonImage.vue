@@ -20,6 +20,7 @@ const loaded = ref(false)
       @load="loaded = true"
       :style="{ display: loaded ? 'block' : 'none' }"
     />
+
     <span v-if="caption" class="image-caption font-plex-sans sub-reg">{{ caption }}</span>
   </div>
 </template>

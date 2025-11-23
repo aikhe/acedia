@@ -7,8 +7,8 @@
         <h1>Who am I’</h1>
       </div>
       <p class="about__desc font-plex-sans font-desc">
-        A phrase I always repeat to myself ever since im born, <br />
-        it’s become a subconcious thought inside my head.
+        A phrase I always repeat to myself ever since im born, it’s become a subconcious thought
+        inside my head.
       </p>
       <div class="about__info">
         <div class="info">
@@ -66,19 +66,16 @@
   line-height: 0.75;
 }
 
+.about__desc {
+  width: 43ch;
+}
+
 .about__info {
   margin-top: 1.8rem;
   letter-spacing: -3.4%;
   line-height: 0.9;
   display: flex;
   gap: 5.5rem;
-}
-
-@media (max-width: 768px) {
-  .about__info {
-    flex-direction: column;
-    gap: 2rem;
-  }
 }
 
 .info {
@@ -95,5 +92,25 @@
 
 .info__desc {
   font-family: ApercuMonoLight;
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 0.8rem;
+  }
+
+  .about__desc {
+    width: 30ch;
+  }
+
+  .about__info {
+    margin-top: 1.34rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info {
+    gap: 0.6rem;
+  }
 }
 </style>

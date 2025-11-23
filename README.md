@@ -1,5 +1,11 @@
 #### acedia
 
+- [x] Favicon
+- [x] Mobile responsive (media queries)
+- [ ] Images
+  - [ ] Lazy
+  - [ ] Skeleton
+- [ ]
 - [ ] Lenis scroll
 - [ ] Clean up
 - [ ] CSS flush

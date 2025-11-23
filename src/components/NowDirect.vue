@@ -49,4 +49,10 @@
 .left-arrow {
   height: 1.4rem;
 }
+
+@media (max-width: 768px) {
+  .now {
+    margin-bottom: 3.4rem;
+  }
+}
 </style>

@@ -11,8 +11,8 @@ import { RouterLink } from 'vue-router'
         <h1>at my <i>heart's content</i></h1>
       </div>
       <p class="hero__desc font-plex-sans font-desc">
-        I do all sort of silly stuff but I mainly love doing what<br />
-        brings clarity and sense to my nagging curiosity.
+        I do all sort of silly stuff but I mainly love doing what brings clarity and sense to my
+        nagging curiosity.
       </p>
       <div class="hero__banner">
         <img loading="lazy" class="banner__img" src="/banner.png" alt="Banner" />
@@ -56,6 +56,7 @@ import { RouterLink } from 'vue-router'
 
 .hero__desc {
   margin-top: 0.8rem;
+  width: 40ch;
 }
 
 .hero__banner {
@@ -67,7 +68,7 @@ import { RouterLink } from 'vue-router'
 }
 
 .banner__caption {
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -94,8 +95,14 @@ import { RouterLink } from 'vue-router'
 }
 
 @media (max-width: 768px) {
-  .hero__title h1 {
-    font-size: 2.5rem; /* Adjust as needed based on font-title definition */
+  .hero__title {
+    gap: 0.2rem;
+    line-height: 0.96;
+  }
+
+  .hero__desc {
+    margin-top: -0.34rem;
+    width: 30ch;
   }
 
   .caption__now {

@@ -8,8 +8,8 @@
       </div>
 
       <p class="hero__desc font-plex-sans font-desc">
-        My current decisions, my life, my experiences and<br />
-        everything to come may it be my plans or the unexpected outcomes.
+        My current decisions, my life, my experiences and everything to come may it be my plans or
+        the unexpected outcomes.
       </p>
 
       <div class="hero__banner">
@@ -34,6 +34,7 @@
 }
 
 .hero__desc {
+  width: 48ch;
   margin-top: 0.8rem;
 }
 
@@ -70,5 +71,16 @@
 
 .left-arrow {
   height: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hero__desc {
+    width: 34ch;
+    margin-top: 0rem;
+  }
+
+  .hero__banner {
+    margin-top: 1rem;
+  }
 }
 </style>
