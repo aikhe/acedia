@@ -3,64 +3,106 @@
 <template>
   <section>
     <div class="blog-container">
-      <h1 class="blog-content-title">Success</h1>
+      <h1 class="blog-content-title">The Following</h1>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Throughout this whole <strong>failure</strong> there's this small spark that keeps me from
-        <strong>completely losing it all</strong>, "<strong>Success</strong>" my final project for
-        the first semester in one of my majors. Trying and giving my time to finish this project has
-        been one of my <strong>coping mechanisms</strong>.
+        Finals comes to an end, and as my final grades come in, I've expected myself to fail ever
+        since it started. Even the unfortunate time and failure I've experienced, my first semester
+        has been the best experience I could ever have asked for, it gave me the time to reflect
+        deeply about what I really am and what I want to do in life, I have nothing but gratefulness
+        for the growth and insight I've gained.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        From the word "<strong>success</strong>", UCC has been a big part of this system as it
-        provides the tools to make each UCCian, may it be teachers and students, studying more
-        <strong>free, accessible, fun and easier</strong> considering that most software that
-        provides the same feature has a paywall to them and so not accessible especially to us
-        students. It has a <strong>fine-tuned AI model</strong> from Hugging Face and Gemini that
-        supports each user a specialized chatbot base of UCC. This system also has features for
-        students and teachers such as <strong>custom quizzes and flashcard generator</strong>, a
-        centralized hub for each user in UCC to give, share and collaborate, and much more. I've
-        also made an
-        <strong
-          >external library to handle TUI (terminal user interface) beautifully entirely in C
-          language</strong
-        >
-        that is used for Success which can also be useful to other developers.
+        <strong>
+          If I still have a chance to continue to the second semester, I would gladly take it and
+          make the most out of it, hoping it will give me the clarity and purpose I need to deepen
+          my connections within UCC and keep pursuing a computer science degree.
+        </strong>
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        What's really <strong>ironic</strong> is that this system is made primarily focused to
-        students and teachers looking for software to make their studying easier such as myself but
-        the one who made it was the one who
-        <strong>literally failed all of his subjects</strong> because of certain circumstances in
-        his life.
+        Even then, Im also ready to take and pursue my own direction when life leads me to a
+        different direction. Whether that means stepping away or exploring oppurtunities outside the
+        "traditional path". I have a deep knowing that my own path doesn't have to look like anyone
+        else's and it may be a journey that include the most intense hardship or a peace that'll
+        make my future self proud.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        This has been a crucial part of my failure as it gives me a sense of comfort and helped me
-        discover more of myself. Yes, we've got an <strong>almost perfect score</strong> for this
-        project and it did put a smile on my face but one thing for sure is that this
-        <strong>success is only one percent</strong> of what it will take to climb back from my
-        failing grades.
+        To close this, I want to list the possibilities I should be aware of, the resposibilities I
+        should have and the oppurtunities I can have by taking a non-traditional path could offer
+        me.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Ever since finishing this project, it taught me things that cannot just be learned
-        <strong>in school alone</strong>. It showed me the
-        <strong>burning passion I have for technology</strong>, the drive to
-        <strong>build meaningful software</strong>, and the
-        <strong>overwhelming love to put the highest quality of work I can give</strong>.
+        <strong>The possibilities I should be aware of:</strong>
       </p>
+      <ul class="margin--medium font-plex-sans font-desc">
+        <li>“High Risk, High Reward” or “High Risk, Possible Failure”.</li>
+        <li>Become a Failure if I don't take my life seriously.</li>
+        <li>
+          Lower oppurtunities in every aspect of life (job, status, respect, relationship, etc.).
+        </li>
+        <li>
+          The intense need for strong self-discipline and personal accountability to achieve my
+          goals and stay on track.
+        </li>
+        <li>
+          Facing criticism or doubt from others especially the people on my life who expects a
+          conventional path.
+        </li>
+      </ul>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Building and learning more about technology has taught me
-        <strong>more than I have ever expected</strong>, without the need for a proper education or
-        college. It showed me that "<strong>Success</strong>" cannot only be made within a
-        classroom, but also within a person whose
-        <strong>energy is consumed by one's own desire and longing</strong> to find reasons to make
-        and achieve much more despite the
-        <strong>struggles, failures, and bad circumstances</strong> in their lives.
+        <strong>The responsibilites I should know and have:</strong>
+      </p>
+      <ul class="margin--medium font-plex-sans font-desc">
+        <li>Take my time for granted and spend it meaningfuly.</li>
+        <li>Stay out of distractions.</li>
+        <li>Learn continuously and upskill to grow personally and professionally.</li>
+        <li>
+          Take responsibility for my own decisions and possible outcomes that go along with it.
+        </li>
+        <li>
+          Form meaningful connections and join communities that'll help me get closer to my goals.
+        </li>
+        <li>Build my personal brand, be active within the tech space and let my name known.</li>
+      </ul>
+
+      <p class="margin--medium font-plex-sans font-desc">
+        <strong>The oppurtunities I can develop and lucky to have:</strong>
+      </p>
+      <ul class="margin--medium font-plex-sans font-desc">
+        <li>Freelance gigs & clients.</li>
+        <li>
+          If I'm fortunate and lucky enough to land an internship, I would be grateful and give my
+          best work and effort.
+        </li>
+        <li>
+          And if I got a job offer just base of my experience and skills, that would be ideal , even
+          if luck played part.
+        </li>
+        <li>
+          Networking with like-minded individuals, mentors, and professionals within the tech
+          industry.
+        </li>
+        <li>
+          Contributing to open-source projects and Participating in hackatons or competitions if I
+          have to chance to do so.
+        </li>
+        <li>
+          Tackling and working on meaningful projects with people who share the same goal and
+          passion.
+        </li>
+        <li>Start and build my own startup.</li>
+      </ul>
+
+      <p class="margin--medium font-plex-sans font-desc">
+        <strong>
+          All this are still to be expected, or uncertain, as I'll have to handle all the work and
+          face the consequences on my own.
+        </strong>
       </p>
     </div>
   </section>

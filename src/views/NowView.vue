@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import CollegeLayout from '@/layouts/CollegeLayout.vue'
-import MomentLayout from '@/layouts/MomentLayout.vue'
 import NowLayout from '@/layouts/NowLayout.vue'
+import MomentLayout from '@/layouts/MomentLayout.vue'
+import CollegeLayout from '@/layouts/CollegeLayout.vue'
 import SuccessLayout from '@/layouts/SuccessLayout.vue'
+import TheFollowingLayout from '@/layouts/TheFollowingLayout.vue'
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import SuccessLayout from '@/layouts/SuccessLayout.vue'
     <CollegeLayout />
     <div class="spacing-content" />
     <SuccessLayout />
+    <div class="spacing-content" />
+    <TheFollowingLayout />
     <div class="spacing--medium" />
   </main>
 </template>

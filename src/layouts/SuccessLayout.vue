@@ -13,28 +13,23 @@
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        From the word "<strong>success</strong>", UCC has been a big part of this system as it
-        provides the tools to make each UCCian, may it be teachers and students, studying more
-        <strong>free, accessible, fun and easier</strong> considering that most software that
-        provides the same feature has a paywall to them and so not accessible especially to us
-        students. It has a <strong>fine-tuned AI model</strong> from Hugging Face and Gemini that
-        supports each user a specialized chatbot base of UCC. This system also has features for
-        students and teachers such as <strong>custom quizzes and flashcard generator</strong>, a
-        centralized hub for each user in UCC to give, share and collaborate, and much more. I've
-        also made an
-        <strong
-          >external library to handle TUI (terminal user interface) beautifully entirely in C
-          language</strong
-        >
-        that is used for Success which can also be useful to other developers.
+        From the word "success", UCC has been a big part of this system as it provides the tools to
+        make each UCCian, may it be teachers and students, studying more free, accessible, fun and
+        easier considering that most software that provides the same feature has a paywall to them
+        and so not accessible especially to us students. It has a fine-tuned AI model from Hugging
+        Face and Gemini with graphRAG (Retrieval Augmented Generation) that supports each user a
+        specialized chatbot base of UCC. This system also has features for students and teachers
+        such as custom quizzes and flashcard generator, a centralized hub for each user in UCC to
+        give, share and collaborate, and much more. I've also made an external library to handle TUI
+        (terminal user interface) beautifully entirely in C language that is used for Success which
+        can also be useful to other developers.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
         What's really <strong>ironic</strong> is that this system is made primarily focused to
         students and teachers looking for software to make their studying easier such as myself but
-        the one who made it was the one who
-        <strong>literally failed all of his subjects</strong> because of certain circumstances in
-        his life.
+        the one who made it was the one who <strong>failed all of his subjects</strong> because of
+        certain circumstances in his life.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
@@ -55,11 +50,10 @@
 
       <p class="margin--medium font-plex-sans font-desc">
         Building and learning more about technology has taught me
-        <strong>more than I have ever expected</strong>, without the need for a proper education or
-        college. It showed me that "<strong>Success</strong>" cannot only be made within a
-        classroom, but also within a person whose
-        <strong>energy is consumed by one's own desire and longing</strong> to find reasons to make
-        and achieve much more despite the
+        <strong>more than I have ever expected</strong>, without the need for a proper education. It
+        showed me that "<strong>Success</strong>" cannot only be made within a classroom, but also
+        within a person whose <strong>energy is consumed by one's own desire and longing</strong> to
+        find reasons to make and achieve much more despite the
         <strong>struggles, failures, and bad circumstances</strong> in their lives.
       </p>
     </div>
