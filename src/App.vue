@@ -47,8 +47,8 @@ import { RouterLink, RouterView } from 'vue-router'
           <div class="info__container">
             <strong class="info__title">Social</strong>
             <span class="info__desc">
-              <a href="">Github</a><br />
-              <a href="">Facebook</a><br />
+              <a href="https://github.com/aikhe">Github</a><br />
+              <a href="https://www.facebook.com/ikeandrie.rosacay">Facebook</a><br />
               <a href="">Linkedin</a><br />
               <a href="">X</a>
             </span>
