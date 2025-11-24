@@ -32,7 +32,7 @@
           great state and have been struggling to keep my education seriously. Whilst these bad
           things are happening I've also lost the motivation, passion, and drive to keep myself in
           touch with what I should be doing that will kept my future secure and healthy. I have been
-          slowing losing myself.
+          slowly losing myself.
         </strong>
       </p>
 

@@ -58,7 +58,7 @@
         <strong>The responsibilites I should know and have:</strong>
       </p>
       <ul class="margin--medium font-plex-sans font-desc">
-        <li>Take my time for granted and spend it meaningfuly.</li>
+        <li>Don't take my time for granted and spend it meaningfuly.</li>
         <li>Stay out of distractions.</li>
         <li>Learn continuously and upskill to grow personally and professionally.</li>
         <li>
