@@ -4,6 +4,9 @@ import MomentLayout from '@/layouts/MomentLayout.vue'
 import CollegeLayout from '@/layouts/CollegeLayout.vue'
 import SuccessLayout from '@/layouts/SuccessLayout.vue'
 import TheFollowingLayout from '@/layouts/TheFollowingLayout.vue'
+import GridImage from '@/components/GridImage.vue'
+import FinalsImage from '@/components/FinalsImage.vue'
+import AteGwy from '@/components/AteGwy.vue'
 </script>
 
 <template>
@@ -15,7 +18,13 @@ import TheFollowingLayout from '@/layouts/TheFollowingLayout.vue'
     <div class="spacing-content" />
     <CollegeLayout />
     <div class="spacing-content" />
+    <FinalsImage />
+    <div class="spacing-content" />
     <SuccessLayout />
+    <div class="spacing-content" />
+    <GridImage />
+    <div class="spacing-content" />
+    <AteGwy />
     <div class="spacing-content" />
     <TheFollowingLayout />
     <div class="spacing--medium" />

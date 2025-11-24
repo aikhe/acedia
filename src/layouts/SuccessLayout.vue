@@ -6,10 +6,11 @@
       <h1 class="blog-content-title">Success</h1>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Throughout this whole <strong>failure</strong> there's this small spark that keeps me from
-        <strong>completely losing it all</strong>, "<strong>Success</strong>" my final project for
-        the first semester in one of my majors. Trying and giving my time to finish this project has
-        been one of my <strong>coping mechanisms</strong>.
+        <strong>
+          Throughout this whole failure there's this small spark that keeps me from completely
+          losing it all, "Success" my final project for the first semester in one of my majors.
+          Trying and giving my time to finish this project has been one of my coping mechanisms.
+        </strong>
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
@@ -26,35 +27,35 @@
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        What's really <strong>ironic</strong> is that this system is made primarily focused to
-        students and teachers looking for software to make their studying easier such as myself but
-        the one who made it was the one who <strong>failed all of his subjects</strong> because of
-        certain circumstances in his life.
+        What's really ironic is that this system is made primarily focused to students and teachers
+        looking for software to make their studying easier such as myself but the one who made it
+        was the one who failed all of his subjects because of certain circumstances in his life.
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        This has been a crucial part of my failure as it gives me a sense of comfort and helped me
-        discover more of myself. Yes, we've got an <strong>almost perfect score</strong> for this
-        project and it did put a smile on my face but one thing for sure is that this
-        <strong>success is only one percent</strong> of what it will take to climb back from my
-        failing grades.
+        <strong>
+          This has been a crucial part of my failure as it gives me a sense of comfort and helped me
+          discover more of myself. Yes, we've got an almost perfect score for this project and it
+          did put a smile on my face but one thing for sure is that this success is only one percent
+          of what it will take to climb back from my failing grades.
+        </strong>
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Ever since finishing this project, it taught me things that cannot just be learned
-        <strong>in school alone</strong>. It showed me the
-        <strong>burning passion I have for technology</strong>, the drive to
-        <strong>build meaningful software</strong>, and the
-        <strong>overwhelming love to put the highest quality of work I can give</strong>.
+        <strong>
+          Ever since finishing this project, it taught me things that cannot just be learned in
+          school alone. It showed me the burning passion I have for technology, the drive to build
+          meaningful software, and the overwhelming love to put the highest quality of work I can
+          give.
+        </strong>
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Building and learning more about technology has taught me
-        <strong>more than I have ever expected</strong>, without the need for a proper education. It
-        showed me that "<strong>Success</strong>" cannot only be made within a classroom, but also
-        within a person whose <strong>energy is consumed by one's own desire and longing</strong> to
-        find reasons to make and achieve much more despite the
-        <strong>struggles, failures, and bad circumstances</strong> in their lives.
+        Building and learning more about technology has taught me more than I have ever expected,
+        without the need for a proper education. It showed me that "Success" cannot only be made
+        within a classroom, but also within a person whose energy is consumed by one's own desire
+        and longing to find reasons to make and achieve much more despite the struggles, failures,
+        and bad circumstances in their lives.
       </p>
     </div>
   </section>
