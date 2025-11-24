@@ -2,6 +2,12 @@
   <section class="section">
     <div class="blog-container">
       <div class="img-container">
+        <img src="/PAGE 1.png" alt="" />
+      </div>
+
+      <div class="spacing" />
+
+      <div class="img-container">
         <img src="/PAGE 9.png" alt="" />
       </div>
 
