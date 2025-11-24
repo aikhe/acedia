@@ -24,21 +24,22 @@
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        Some time have passed and I've noticed how overly reliant I was to my mother and other
-        people in my life for financial reasons and it's really killing me inside. I've also noticed
-        the lack of challenge that some of my subjects and majors are providing as im learning more
-        from my own rather than college itself. My health have also not been in a great state and
-        have been struggling to keep my education seriously. Whilst these bad things are happening
-        I've also lost the motivation, passion, and drive to keep myself in touch with what I should
-        be doing that will kept my future secure and healthy. I have been slowing losing myself.
+        <strong>
+          Some time have passed and I've noticed how overly reliant I was to my mother and other
+          people in my life for financial reasons and it's really killing me inside. I've also
+          noticed the lack of challenge that some of my subjects and majors are providing as im
+          learning more from my own rather than college itself. My health have also not been in a
+          great state and have been struggling to keep my education seriously. Whilst these bad
+          things are happening I've also lost the motivation, passion, and drive to keep myself in
+          touch with what I should be doing that will kept my future secure and healthy. I have been
+          slowing losing myself.
+        </strong>
       </p>
 
       <p class="margin--medium font-plex-sans font-desc">
-        <strong>
-          This unfortunate time and experience manifested through my education for the past 3
-          months. I was not going to most of my classes and have missed most of my exams. Our finals
-          have passed and so my record is, I have dropped most my subjects this first semester.
-        </strong>
+        This unfortunate time and experience manifested through my education for the past 3 months.
+        I was not going to most of my classes and have missed most of my exams. Our finals have
+        passed and so my record is, I have dropped most my subjects this first semester.
       </p>
     </div>
   </section>
