@@ -7,10 +7,12 @@ import TheFollowingLayout from '@/layouts/TheFollowingLayout.vue'
 import GridImage from '@/components/GridImage.vue'
 import FinalsImage from '@/components/FinalsImage.vue'
 import AteGwy from '@/components/AteGwy.vue'
+import CurrentStatus from '@/components/CurrentStatus.vue'
 </script>
 
 <template>
   <main>
+    <CurrentStatus />
     <div class="spacing" />
     <NowLayout />
     <div class="spacing-content" />

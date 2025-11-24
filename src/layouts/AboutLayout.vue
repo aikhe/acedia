@@ -7,8 +7,8 @@
         <h1>Who am I’</h1>
       </div>
       <p class="about__desc font-plex-sans font-desc">
-        A phrase I always repeat to myself ever since im born, it’s become a subconcious thought
-        inside my head.
+        I’m curious about the world and enjoy exploring my hobbies and the little things that make
+        life interesting. Here’s a bit more about me.
       </p>
       <div class="about__info">
         <div class="info">
