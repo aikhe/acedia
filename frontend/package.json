@@ -49,8 +49,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitest": "^3.2.4",
-    "vue-eslint-parser": "^9.4.3",
+    "vue-eslint-parser": "^10.0.0",
     "vue-tsc": "^3.2.2"
   }
 }
-
