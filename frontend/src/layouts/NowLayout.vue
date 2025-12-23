@@ -12,6 +12,14 @@
         the unexpected outcomes.
       </p>
 
+      <div class="blog-meta font-plex-sans">
+        <span class="blog-author">Ike Rosacay</span>
+        <span class="blog-separator"></span>
+        <span class="blog-date">Nov 18, 2025</span>
+        <span class="blog-separator"></span>
+        <span class="blog-date">Updated Nov 27, 2025</span>
+      </div>
+
       <div class="hero__banner">
         <img class="banner__img" src="/now.png" alt="Banner" />
       </div>
@@ -36,6 +44,20 @@
 .hero__desc {
   width: 48ch;
   margin-top: 0.8rem;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 10pt;
+  font-family: ApercuMonoLight;
+  opacity: 0.7;
+  margin-top: 0.4rem;
+}
+
+.blog-separator {
+  opacity: 0.5;
 }
 
 .hero__banner {

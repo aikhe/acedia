@@ -58,12 +58,12 @@ const formatDate = (dateString?: string) => {
 
             <div class="blog-card__meta">
               <span class="blog-card__author">Ike Rosacay</span>
-              <span class="blog-card__separator">·</span>
+              <span class="blog-card__separator"></span>
               <span class="blog-card__date" v-if="blog._createdAt">
                 {{ formatDate(blog._createdAt) }}
               </span>
               <template v-if="blog._updatedAt && blog._updatedAt !== blog._createdAt">
-                <span class="blog-card__separator">·</span>
+                <span class="blog-card__separator"></span>
                 <span class="blog-card__date blog-card__date--updated">
                   Updated {{ formatDate(blog._updatedAt) }}
                 </span>
@@ -222,7 +222,8 @@ const formatDate = (dateString?: string) => {
 }
 
 @keyframes skeleton-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {

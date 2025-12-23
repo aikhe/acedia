@@ -54,7 +54,19 @@ const formatDate = (dateString?: string) => {
 
     <section>
       <div class="blog-container blog-detail" v-if="loading">
-        <p class="font-plex-sans">Loading...</p>
+        <header class="blog-header">
+          <div class="skeleton skeleton--title"></div>
+          <div class="skeleton skeleton--description"></div>
+          <div class="skeleton skeleton--meta"></div>
+        </header>
+        <div class="blog-cover">
+          <div class="skeleton skeleton--cover"></div>
+        </div>
+        <div class="blog-content">
+          <div class="skeleton skeleton--text"></div>
+          <div class="skeleton skeleton--text"></div>
+          <div class="skeleton skeleton--text skeleton--short"></div>
+        </div>
       </div>
 
       <div class="blog-container blog-detail" v-else-if="error">
@@ -71,12 +83,12 @@ const formatDate = (dateString?: string) => {
 
           <div class="blog-meta font-plex-sans">
             <span class="blog-author">Ike Rosacay</span>
-            <span class="blog-separator">·</span>
+            <span class="blog-separator"></span>
             <span class="blog-date" v-if="blog._createdAt">
               {{ formatDate(blog._createdAt) }}
             </span>
             <template v-if="blog._updatedAt && blog._updatedAt !== blog._createdAt">
-              <span class="blog-separator">·</span>
+              <span class="blog-separator"></span>
               <span class="blog-date">Updated {{ formatDate(blog._updatedAt) }}</span>
             </template>
           </div>
@@ -172,7 +184,7 @@ const formatDate = (dateString?: string) => {
 
 .blog-content :deep(ul),
 .blog-content :deep(ol) {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   line-height: 1.2;
 }
 
@@ -247,6 +259,54 @@ const formatDate = (dateString?: string) => {
 
   .blog-content :deep(.img-caption) {
     width: 100%;
+  }
+}
+
+/* Skeleton Loading */
+.skeleton {
+  background: #f5f5f5;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton--title {
+  height: 40pt;
+  width: 70%;
+}
+
+.skeleton--description {
+  height: 18pt;
+  width: 90%;
+  margin-top: 0.8rem;
+}
+
+.skeleton--meta {
+  height: 10pt;
+  width: 30%;
+  margin-top: 0.4rem;
+}
+
+.skeleton--cover {
+  width: 100%;
+  height: 60vh;
+}
+
+.skeleton--text {
+  height: 1.2rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.skeleton--short {
+  width: 60%;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
 </style>

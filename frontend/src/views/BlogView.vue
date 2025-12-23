@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import BlogLayout from '@/layouts/BlogLayout.vue'
-import CurrentStatus from '@/components/CurrentStatus.vue'
 </script>
 
 <template>
   <main>
-    <CurrentStatus />
-    <div class="spacing--medium" />
+    <div class="spacing--large" />
     <BlogLayout />
     <div class="spacing--large" />
   </main>
