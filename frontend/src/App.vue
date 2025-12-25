@@ -142,6 +142,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  color: inherit;
 }
 
 .acedia__text {

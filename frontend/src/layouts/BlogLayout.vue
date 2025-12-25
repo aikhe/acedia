@@ -17,8 +17,15 @@ const formatDate = (dateString?: string) => {
 <template>
   <section>
     <div class="container blog-layout">
-      <div v-if="loading" class="blog-loading font-plex-sans">
-        <p>Loading blogs...</p>
+      <div v-if="loading" class="blog-grid">
+        <div v-for="n in 4" :key="n" class="blog-card blog-card--skeleton">
+          <div class="skeleton skeleton--cover"></div>
+          <div class="blog-card__content">
+            <div class="skeleton skeleton--title"></div>
+            <div class="skeleton skeleton--description"></div>
+            <div class="skeleton skeleton--meta"></div>
+          </div>
+        </div>
       </div>
 
       <div v-else-if="error" class="blog-error font-plex-sans">
@@ -113,7 +120,7 @@ const formatDate = (dateString?: string) => {
 }
 
 .blog-card:hover .blog-card__title {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .blog-card__image-placeholder {
@@ -139,7 +146,7 @@ const formatDate = (dateString?: string) => {
 .blog-card__description {
   font-size: 12pt;
   font-weight: 350;
-  line-height: 1.5;
+  line-height: 1.2;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -181,6 +188,45 @@ const formatDate = (dateString?: string) => {
   .blog-card__meta {
     font-size: 9pt;
     flex-wrap: wrap;
+  }
+}
+
+/* Skeleton Loading */
+.blog-card--skeleton {
+  pointer-events: none;
+}
+
+.skeleton {
+  background: #f5f5f5;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton--cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.skeleton--title {
+  height: 24pt;
+  width: 80%;
+}
+
+.skeleton--description {
+  height: 12pt;
+  width: 100%;
+}
+
+.skeleton--meta {
+  height: 10pt;
+  width: 50%;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
 </style>

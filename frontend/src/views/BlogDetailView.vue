@@ -6,7 +6,6 @@ import { h } from 'vue'
 import { createImageUrlBuilder } from '@sanity/image-url'
 import { client } from '@/sanity/client'
 import type { ImageValue } from '@/types/blog'
-import CurrentStatus from '@/components/CurrentStatus.vue'
 
 const route = useRoute()
 const blogId = route.params.id as string
@@ -51,7 +50,6 @@ const formatDate = (dateString?: string) => {
 
 <template>
   <main>
-    <CurrentStatus />
     <div class="spacing" />
 
     <section>
@@ -174,14 +172,13 @@ const formatDate = (dateString?: string) => {
 
 .blog-content :deep(ul),
 .blog-content :deep(ol) {
-  padding-left: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-top: 2rem;
   line-height: 1.2;
 }
 
-.blog-content :deep(ul li) {
+.blog-content :deep(ul li),
+.blog-content :deep(ol li) {
+  margin-left: 1rem;
   padding-left: 0.2rem;
 }
 
