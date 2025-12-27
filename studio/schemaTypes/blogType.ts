@@ -16,12 +16,10 @@ export default defineType({
         Rule.custom((value) => {
           if (!value) return true
 
-          // if title is only whitespace
           if (value && value.trim().length === 0) {
             return 'Title cannot be only whitespace'
           }
 
-          // if title has invalid characters
           const invalidChars = /[<>|~@#$%^*[]{}\]/
           if (invalidChars.test(value)) {
             return 'Title contains invalid characters'
@@ -67,9 +65,9 @@ export default defineType({
           type: 'image',
           fields: [
             {
+              title: 'Alternative text',
               name: 'alt',
               type: 'string',
-              title: 'Alternative text',
               description: 'Important for SEO and accessibility',
               validation: (Rule) => Rule.required().error('Alt text is required for accessibility'),
               options: {
@@ -77,9 +75,9 @@ export default defineType({
               },
             },
             {
+              title: 'Caption',
               name: 'caption',
               type: 'string',
-              title: 'Caption',
             },
           ],
         },
@@ -91,7 +89,6 @@ export default defineType({
 
           if (content.length === 0) return true
 
-          // ensure first block is not an image
           if (content[0]?._type === 'image') {
             return 'Please start with text before adding images.'
           }
