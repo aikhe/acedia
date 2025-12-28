@@ -1,8 +1,39 @@
 <script setup lang="ts">
 import { useBlogs } from '@/composables/useBlogs'
 import { PortableText } from '@portabletext/vue'
+import { h } from 'vue'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
 
 const { blogs, loading, error } = useBlogs()
+
+const builder = createImageUrlBuilder(client)
+
+interface ImageValue {
+  _type: 'image'
+  asset: {
+    _ref?: string
+    _type?: string
+  }
+  alt?: string
+  caption?: string
+}
+
+const components = {
+  types: {
+    image: ({ value }: { value: ImageValue }) => {
+      if (!value?.asset) return null
+
+      const imageUrl = builder.image(value).width(1200).url()
+
+      return h('img', {
+        src: imageUrl,
+        alt: value.alt || '',
+        style: { maxWidth: '100%', height: 'auto' },
+      })
+    },
+  },
+}
 </script>
 
 <template>
@@ -17,7 +48,7 @@ const { blogs, loading, error } = useBlogs()
         <p v-if="blog.description">{{ blog.description }}</p>
 
         <div v-if="blog.content">
-          <PortableText :value="blog.content" />
+          <PortableText :value="blog.content" :components="components" />
         </div>
 
         <span>{{ blog.category }}</span>
