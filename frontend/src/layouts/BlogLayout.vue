@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useBlogs } from '@/composables/useBlogs'
+import { PortableText } from '@portabletext/vue'
 
 const { blogs, loading, error } = useBlogs()
 </script>
@@ -14,7 +15,11 @@ const { blogs, loading, error } = useBlogs()
         <h2>{{ blog.title }}</h2>
         <img v-if="blog.coverUrl" :src="blog.coverUrl" :alt="blog.coverAlt || blog.title" />
         <p v-if="blog.description">{{ blog.description }}</p>
-        <p v-if="blog.content">{{ blog.content }}</p>
+
+        <div v-if="blog.content">
+          <PortableText :value="blog.content" />
+        </div>
+
         <span>{{ blog.category }}</span>
         <div>
           <span v-for="tag in blog.tags" :key="tag">{{ tag }}</span>
