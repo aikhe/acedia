@@ -34,7 +34,7 @@ export default defineType({
       title: 'Description',
       name: 'description',
       type: 'text',
-      description: 'Brief description of the Blog',
+      description: 'A dramatic description for the Blog',
       validation: (Rule) => [
         Rule.max(5000).error('Description cannot exceed 5000 characters'),
         Rule.custom((value) => {
