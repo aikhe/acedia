@@ -98,5 +98,54 @@ export default defineType({
         }),
       ],
     }),
+    defineField({
+      title: 'Category',
+      name: 'category',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'aikhe', value: 'aikhe'},
+          {title: 'acedia', value: 'acedia'},
+          {title: 'elapse', value: 'elapse'},
+          {title: 'miscs', value: 'miscs'},
+        ],
+      },
+      validation: (Rule) => Rule.required().error('Tags is required'),
+    }),
+    defineField({
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          validation: (Rule) => [
+            Rule.min(2).error('Tag must be at least 2 characters long'),
+            Rule.max(200).error('Tag cannot exceed 200 characters'),
+            Rule.custom((value) => {
+              if (typeof value !== 'string') return true
+
+              if (value.trim().length === 0) {
+                return 'Tag cannot be only whitespace'
+              }
+
+              return true
+            }),
+          ],
+        },
+      ],
+      validation: (Rule) => [
+        Rule.min(1).error('At least one tag must be specified'),
+        Rule.max(20).error('Maximum 20 tags allowed'),
+        Rule.unique().error('No duplicate tags allowed'),
+        Rule.custom((tags) => {
+          if (!Array.isArray(tags)) return true
+
+          return tags.some((tag) => typeof tag !== 'string' || tag.trim().length === 0)
+            ? 'Tags cannot be empty'
+            : true
+        }),
+      ],
+    }),
   ],
 })
