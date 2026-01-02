@@ -6,14 +6,8 @@ export interface Blog {
   _type: 'blog'
   title: string
   description?: string
-  cover: {
-    asset: {
-      _ref: string
-      _type: 'reference'
-      url?: string
-    }
-    alt?: string
-  }
+  coverUrl?: string // ✅ Changed: flat property
+  coverAlt?: string // ✅ Changed: flat property
   content: Array<{
     _type: 'block' | 'image'
     [key: string]: string
@@ -41,6 +35,7 @@ export function useBlogs() {
         description,
         "coverUrl": cover.asset->url,
         "coverAlt": cover.alt,
+        content,
         category,
         tags,
         _createdAt,

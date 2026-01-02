@@ -56,6 +56,7 @@ export default defineType({
       validation: (Rule) => [Rule.required().error('Cover Image is required')],
     }),
     defineField({
+      title: 'Content',
       name: 'content',
       type: 'array',
       of: [
