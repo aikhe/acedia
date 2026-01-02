@@ -5,30 +5,55 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      title: 'Title',
       name: 'title',
-      type: 'text',
+      type: 'string',
+      validation: (Rule) => [
+        Rule.required().error('Title is required'),
+        Rule.min(3).error('Title must be at least 3 characters long'),
+        Rule.max(200).error('Title cannot exceed 200 characters'),
+        Rule.custom((value) => {
+          if (!value) return true
+
+          // if title is only whitespace
+          if (value && value.trim().length === 0) {
+            return 'Title cannot be only whitespace'
+          }
+
+          // if title has invalid characters
+          const invalidChars = /[<>|~@#$%^*[]{}\]/
+          if (invalidChars.test(value)) {
+            return 'Title contains invalid characters'
+          }
+
+          return true
+        }),
+      ],
     }),
     defineField({
+      title: 'Cover Image',
       name: 'cover',
       type: 'image',
+      validation: (Rule) => [Rule.required().error('Cover Image is required')],
     }),
     defineField({
       name: 'content',
       type: 'array',
       of: [
         {
-          type: 'block', // Standard rich text
+          type: 'block',
         },
         {
-          type: 'image', // This adds image blocks!
+          type: 'image',
           fields: [
             {
               name: 'alt',
               type: 'string',
               title: 'Alternative text',
               description: 'Important for SEO and accessibility',
+              validation: (Rule) => Rule.required().error('Alt text is required for accessibility'),
               options: {
-                isHighlighted: true, // Shows the field prominently
+                isHighlighted: true,
               },
             },
             {
@@ -38,6 +63,21 @@ export default defineType({
             },
           ],
         },
+      ],
+      validation: (Rule) => [
+        Rule.required().error('Content is required'),
+        Rule.custom((blocks) => {
+          const content = (blocks as any[]) || []
+
+          if (content.length === 0) return true
+
+          // ensure first block is not an image
+          if (content[0]?._type === 'image') {
+            return 'Please start with text before adding images.'
+          }
+
+          return true
+        }),
       ],
     }),
   ],
