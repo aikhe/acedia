@@ -142,7 +142,7 @@ export default defineType({
           if (!Array.isArray(tags)) return true
 
           return tags.some((tag) => typeof tag !== 'string' || tag.trim().length === 0)
-            ? 'Tags cannot be empty'
+            ? 'Tags should be named'
             : true
         }),
       ],
