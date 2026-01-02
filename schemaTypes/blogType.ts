@@ -31,6 +31,24 @@ export default defineType({
       ],
     }),
     defineField({
+      title: 'Description',
+      name: 'description',
+      type: 'text',
+      description: 'Brief description of the Blog',
+      validation: (Rule) => [
+        Rule.max(5000).error('Description cannot exceed 5000 characters'),
+        Rule.custom((value) => {
+          if (!value) return true
+
+          if (value && value.trim().length === 0) {
+            return 'Description cannot be only whitespace'
+          }
+
+          return true
+        }),
+      ],
+    }),
+    defineField({
       title: 'Cover Image',
       name: 'cover',
       type: 'image',
