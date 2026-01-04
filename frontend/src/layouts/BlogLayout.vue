@@ -10,7 +10,6 @@ const { blogs, loading, error } = useBlogs()
     <div v-else-if="error">Error: {{ error }}</div>
     <div v-else>
       <article v-for="blog in blogs" :key="blog._id" class="blog-card">
-        <img v-if="blog.coverUrl" :src="blog.coverUrl" :alt="blog.coverAlt || blog.title" />
         <h2>{{ blog.title }}</h2>
         <p v-if="blog.description">{{ blog.description }}</p>
         <div class="meta">

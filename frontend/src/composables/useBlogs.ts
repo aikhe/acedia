@@ -3,7 +3,7 @@ import { client } from '@/sanity/client'
 
 export interface Blog {
   _id: string
-  _type: 'myDocument'
+  _type: 'blog'
   title: string
   description?: string
   cover: {
@@ -55,6 +55,8 @@ export function useBlogs() {
       loading.value = false
     }
   }
+
+  fetchAllBlogs()
 
   return {
     blogs,

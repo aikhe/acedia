@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BlogLayout from '@/layouts/BlogLayout.vue'
+import CurrentStatus from '@/components/CurrentStatus.vue'
 </script>
 
 <template>
