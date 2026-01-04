@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/NowView.vue'),
     },
     {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/BlogView.vue'),
+    },
+    {
       path: '/home',
       name: 'home',
       component: () => import('../views/HomeView.vue'),

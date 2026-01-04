@@ -13,4 +13,9 @@ export default defineConfig({
     },
   },
   base: '/',
+  define: {
+    'process.env.SANITY_PROJECT_ID': JSON.stringify(process.env.SANITY_PROJECT_ID),
+    'process.env.SANITY_DATASET': JSON.stringify(process.env.SANITY_DATASET),
+    'process.env.SANITY_API_VERSION': JSON.stringify(process.env.SANITY_API_VERSION),
+  },
 })
