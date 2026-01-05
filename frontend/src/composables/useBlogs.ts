@@ -1,22 +1,6 @@
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { client } from '@/sanity/client'
-
-export interface Blog {
-  _id: string
-  _type: 'blog'
-  title: string
-  description?: string
-  coverUrl?: string // ✅ Changed: flat property
-  coverAlt?: string // ✅ Changed: flat property
-  content: Array<{
-    _type: 'block' | 'image'
-    [key: string]: string
-  }>
-  category: 'aikhe' | 'acedia' | 'elapse' | 'miscs'
-  tags: string[]
-  _createdAt?: string
-  _updatedAt?: string
-}
+import type { Blog } from '@/types/blog'
 
 export function useBlogs() {
   const blogs = ref<Blog[]>([])

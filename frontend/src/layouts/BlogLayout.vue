@@ -4,20 +4,11 @@ import { PortableText } from '@portabletext/vue'
 import { h } from 'vue'
 import { createImageUrlBuilder } from '@sanity/image-url'
 import { client } from '@/sanity/client'
+import type { ImageValue } from '@/types/blog'
 
 const { blogs, loading, error } = useBlogs()
 
 const builder = createImageUrlBuilder(client)
-
-interface ImageValue {
-  _type: 'image'
-  asset: {
-    _ref?: string
-    _type?: string
-  }
-  alt?: string
-  caption?: string
-}
 
 const components = {
   types: {
