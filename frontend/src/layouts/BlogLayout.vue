@@ -113,7 +113,7 @@ const formatDate = (dateString?: string) => {
 }
 
 .blog-card:hover .blog-card__title {
-  text-decoration: underline;
+  opacity: 0.5;
 }
 
 .blog-card__image-placeholder {
@@ -142,6 +142,7 @@ const formatDate = (dateString?: string) => {
   line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

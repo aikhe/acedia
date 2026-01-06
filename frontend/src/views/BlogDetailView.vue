@@ -31,9 +31,7 @@ const components = {
       ]
 
       if (value.caption) {
-        children.push(
-          h('p', { class: 'img-caption font-plex-sans sub-reg' }, value.caption),
-        )
+        children.push(h('p', { class: 'img-caption font-plex-sans sub-reg' }, value.caption))
       }
 
       return h('figure', { class: 'content-figure' }, children)
@@ -158,11 +156,20 @@ const formatDate = (dateString?: string) => {
 }
 
 .blog-content :deep(p) {
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .blog-content :deep(strong) {
   font-weight: 450;
+}
+
+.blog-content :deep(em) {
+  font-style: italic;
+}
+
+.blog-content :deep(s),
+.blog-content :deep(del) {
+  text-decoration: line-through;
 }
 
 .blog-content :deep(ul),
@@ -171,6 +178,11 @@ const formatDate = (dateString?: string) => {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  line-height: 1.2;
+}
+
+.blog-content :deep(ul li) {
+  padding-left: 0.2rem;
 }
 
 .blog-content :deep(.content-figure) {

@@ -1,14 +1,40 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const headerVisible = ref(true)
+let lastScrollY = 0
+
+const handleScroll = () => {
+  const currentScrollY = window.scrollY
+
+  if (currentScrollY < 100) {
+    headerVisible.value = true
+  } else if (currentScrollY < lastScrollY) {
+    headerVisible.value = true
+  } else {
+    headerVisible.value = false
+  }
+
+  lastScrollY = currentScrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-  <header>
+  <header :class="{ 'header--hidden': !headerVisible }">
     <div class="navbar container">
-      <div class="acedia">
+      <RouterLink to="/" class="acedia">
         <div class="acedia__box" />
         <span class="sub-reg acedia__text">ACEDIA</span>
-      </div>
+      </RouterLink>
 
       <nav class="sub-reg navbar__links">
         <RouterLink to="/">ME</RouterLink>
@@ -71,11 +97,20 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+header.header--hidden {
+  transform: translateY(-100%);
 }
 
 .navbar {
