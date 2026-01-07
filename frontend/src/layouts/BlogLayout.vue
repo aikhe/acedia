@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import { useBlogs } from '@/composables/useBlogs'
 
 const { blogs, loading, error } = useBlogs()
@@ -25,7 +26,12 @@ const formatDate = (dateString?: string) => {
       </div>
 
       <div v-else class="blog-grid">
-        <article v-for="blog in blogs" :key="blog._id" class="blog-card">
+        <RouterLink
+          v-for="blog in blogs"
+          :key="blog._id"
+          :to="`/blog/${blog._id}`"
+          class="blog-card"
+        >
           <div class="blog-card__image-wrapper">
             <img
               v-if="blog.coverUrl"
@@ -57,7 +63,7 @@ const formatDate = (dateString?: string) => {
               </template>
             </div>
           </div>
-        </article>
+        </RouterLink>
       </div>
     </div>
   </section>
@@ -81,9 +87,9 @@ const formatDate = (dateString?: string) => {
 }
 
 .blog-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2rem;
 }
 
 .blog-card {
@@ -159,6 +165,7 @@ const formatDate = (dateString?: string) => {
 
 @media (max-width: 768px) {
   .blog-grid {
+    grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 

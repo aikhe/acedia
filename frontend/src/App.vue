@@ -13,6 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="sub-reg navbar__links">
         <RouterLink to="/">ME</RouterLink>
         <RouterLink to="/now">NOW</RouterLink>
+        <RouterLink to="/blog">BLOG</RouterLink>
       </nav>
 
       <button>
