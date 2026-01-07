@@ -21,11 +21,22 @@ const components = {
 
       const imageUrl = builder.image(value).width(1200).url()
 
-      return h('img', {
-        src: imageUrl,
-        alt: value.alt || '',
-        class: 'content-image',
-      })
+      const children = [
+        h('div', { class: 'img-container' }, [
+          h('img', {
+            src: imageUrl,
+            alt: value.alt || '',
+          }),
+        ]),
+      ]
+
+      if (value.caption) {
+        children.push(
+          h('p', { class: 'img-caption font-plex-sans sub-reg' }, value.caption),
+        )
+      }
+
+      return h('figure', { class: 'content-figure' }, children)
     },
   },
 }
@@ -162,9 +173,26 @@ const formatDate = (dateString?: string) => {
   gap: 0.5rem;
 }
 
-.blog-content :deep(.content-image) {
-  width: 100%;
+.blog-content :deep(.content-figure) {
   margin: 1rem 0;
+}
+
+.blog-content :deep(.img-container) {
+  max-width: 90%;
+  margin: auto;
+}
+
+.blog-content :deep(.img-container img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-content :deep(.img-caption) {
+  width: 90%;
+  margin: auto;
+  margin-top: 0.4rem;
+  opacity: 0.6;
 }
 
 .blog-content :deep(h2),
@@ -202,6 +230,14 @@ const formatDate = (dateString?: string) => {
 
   .blog-content {
     gap: 1.2rem;
+  }
+
+  .blog-content :deep(.img-container) {
+    max-width: 100%;
+  }
+
+  .blog-content :deep(.img-caption) {
+    width: 100%;
   }
 }
 </style>

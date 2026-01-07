@@ -97,6 +97,7 @@ const formatDate = (dateString?: string) => {
   flex-direction: column;
   gap: 1rem;
   cursor: pointer;
+  color: inherit;
 }
 
 .blog-card__image-wrapper {
@@ -109,11 +110,10 @@ const formatDate = (dateString?: string) => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
 }
 
-.blog-card:hover .blog-card__image {
-  transform: scale(1.02);
+.blog-card:hover .blog-card__title {
+  text-decoration: underline;
 }
 
 .blog-card__image-placeholder {
