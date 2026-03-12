@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import acedia from '/acedia.svg'
+
+// import { RouterLink, RouterView } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const headerVisible = ref(true)
@@ -29,73 +31,89 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header :class="{ 'header--hidden': !headerVisible }">
-    <div class="navbar container">
-      <RouterLink to="/" class="acedia">
-        <div class="acedia__box" />
-        <span class="sub-reg acedia__text">ACEDIA</span>
-      </RouterLink>
+  <main>
+    <img :src="acedia" alt="Acedia" />
+  </main>
 
-      <nav class="sub-reg navbar__links">
-        <RouterLink to="/">ME</RouterLink>
-        <RouterLink to="/now">NOW</RouterLink>
-        <RouterLink to="/blog">BLOG</RouterLink>
-      </nav>
-
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="header__theme-toggle"
-        >
-          <path
-            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
-          />
-        </svg>
-      </button>
-    </div>
-  </header>
-
-  <RouterView />
-
-  <footer>
-    <div class="footer container">
-      <div class="footer__info">
-        <div class="info__left">
-          <div class="info__container">
-            <strong class="info__title">Specialty</strong>
-            <span class="info__desc">
-              Building cool stuff<br />
-              Learning about myself
-            </span>
-          </div>
-
-          <div class="info__container">
-            <strong class="info__title">Social</strong>
-            <span class="info__desc">
-              <a href="https://github.com/aikhe">Github</a><br />
-              <a href="https://www.facebook.com/ikeandrie.rosacay">Facebook</a><br />
-              <a href="">Linkedin</a><br />
-              <a href="">X</a>
-            </span>
-          </div>
-        </div>
-
-        <div class="info__right info__container">
-          <strong class="info__title">Contact</strong>
-          <span class="info__desc"> ikeandrie.ro@gmail.com </span>
-        </div>
-      </div>
-      <div class="footer__brand sub-reg">
-        <RouterLink class="brand__container" to="/">ACEDIA</RouterLink>
-        <span class="brand__container">AIKHE @2025</span>
-      </div>
-    </div>
-  </footer>
+  <!-- <header :class="{ 'header--hidden': !headerVisible }"> -->
+  <!--   <div class="navbar container"> -->
+  <!--     <RouterLink to="/" class="acedia"> -->
+  <!--       <div class="acedia__box" /> -->
+  <!--       <span class="sub-reg acedia__text">ACEDIA</span> -->
+  <!--     </RouterLink> -->
+  <!---->
+  <!--     <nav class="sub-reg navbar__links"> -->
+  <!--       <RouterLink to="/">ME</RouterLink> -->
+  <!--       <RouterLink to="/now">NOW</RouterLink> -->
+  <!--       <RouterLink to="/blog">BLOG</RouterLink> -->
+  <!--     </nav> -->
+  <!---->
+  <!--     <button> -->
+  <!--       <svg -->
+  <!--         xmlns="http://www.w3.org/2000/svg" -->
+  <!--         viewBox="0 0 24 24" -->
+  <!--         fill="currentColor" -->
+  <!--         class="header__theme-toggle" -->
+  <!--       > -->
+  <!--         <path -->
+  <!--           d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" -->
+  <!--         /> -->
+  <!--       </svg> -->
+  <!--     </button> -->
+  <!--   </div> -->
+  <!-- </header> -->
+  <!---->
+  <!-- <RouterView /> -->
+  <!---->
+  <!-- <footer> -->
+  <!--   <div class="footer container"> -->
+  <!--     <div class="footer__info"> -->
+  <!--       <div class="info__left"> -->
+  <!--         <div class="info__container"> -->
+  <!--           <strong class="info__title">Specialty</strong> -->
+  <!--           <span class="info__desc"> -->
+  <!--             Building cool stuff<br /> -->
+  <!--             Learning about myself -->
+  <!--           </span> -->
+  <!--         </div> -->
+  <!---->
+  <!--         <div class="info__container"> -->
+  <!--           <strong class="info__title">Social</strong> -->
+  <!--           <span class="info__desc"> -->
+  <!--             <a href="https://github.com/aikhe">Github</a><br /> -->
+  <!--             <a href="https://www.facebook.com/ikeandrie.rosacay">Facebook</a><br /> -->
+  <!--             <a href="">Linkedin</a><br /> -->
+  <!--             <a href="">X</a> -->
+  <!--           </span> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!---->
+  <!--       <div class="info__right info__container"> -->
+  <!--         <strong class="info__title">Contact</strong> -->
+  <!--         <span class="info__desc"> ikeandrie.ro@gmail.com </span> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="footer__brand sub-reg"> -->
+  <!--       <RouterLink class="brand__container" to="/">ACEDIA</RouterLink> -->
+  <!--       <span class="brand__container">AIKHE @2025</span> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </footer> -->
 </template>
 
 <style scoped>
+main {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 2rem;
+}
+
 header {
   position: sticky;
   top: 0;
